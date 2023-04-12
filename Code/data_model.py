@@ -27,21 +27,6 @@ class AllenInstituteDataModel(object):
 
   def __init__(self, session=None):
     self.session = session
-    # self.matlab_engine = None
-
-  # def _start_matlab_engine(self, force=False):
-  #   if force is False and self.matlab_engine is not None:
-  #     return
-  #   print('(Re)start the engine.')
-  #   import sys
-  #   if sys.platform == 'win32':
-  #       project_dir = 'D:/Brain_Network/'
-  #   elif sys.platform=='darwin':
-  #       project_dir = '/Users/chenyu/Workspace/Brain_Network'
-  #   self.matlab_engine = matlab.engine.start_matlab()
-  #   self.matlab_engine.addpath(self.matlab_engine.genpath(project_dir))
-  #   self.stdout = io.StringIO()
-  #   self.stderr = io.StringIO()
 
   def print_session_info(self):
     """Print a list of information for the session."""
